@@ -1,0 +1,56 @@
+/* boilerplate */
+
+/* #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+} */
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background: black;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  border: 0.15rem solid black;
+  background: white;
+}
+
+body {
+  background: black;
+}
+
+main {
+  position: absolute;
+  color: transparent;
+  font-family: ubuntu;
+  padding-left: 1rem;
+  font-size: 1rem;
+  line-height: 5rem;
+  height: 1000vh;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h2 {
+  /* color: pink; */
+  /* background: pink; */
+  grid-column: 2/8;
+}
+
+canvas {
+  border-radius: 2rem;
+  background: url('spac.jpg');
+  background-size: cover;
+  margin: 1rem;
+  width: 100vw - 1rem; height: 100vh - 1rem;
+  position: fixed; 
+  left: 0;
+  top: 0;
+}
